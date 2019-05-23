@@ -11,13 +11,8 @@ export default class InputComponent extends React.Component<Props> {
 
   render() {
     return (
-      <div className="panel" data-testid="panel-wrapper">
-        <h1 className="heading text-muni">Map</h1>
-
-        <button className="primary">primary button</button>
-        <button className="secondary">secondary button</button>
-        <button className="danger">danger button</button>
-        <button className="success">success button</button>
+      <div className="input-wrapper" data-testid="input-wrapper">
+        <h1 className="heading text-muni">Input</h1>
       </div>
     );
   }
