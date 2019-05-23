@@ -71,13 +71,18 @@
 .output-html {
   font: normal 16px/1.45 Arial, Helvetica Neue, sans-serif;
   div.line {
-    margin-bottom: 2rem;
+    &.empty {
+      margin-bottom: 2rem;
+    }
     &.solid {
       border-bottom: 2px solid black;
     }
     &.dotted {
       border-bottom: 2px dotted black;
     }
+  }
+
+  div.newline {
   }
   p {
     margin-bottom: 1rem;
@@ -86,6 +91,14 @@
   .heading,
   .subheading {
     font-family: "Muni", Arial, Helvetica Neue, sans-serif;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+  .subheading {
+    font-size: 2rem;
+    margin-top: -0.5rem;
   }
 
   button {
