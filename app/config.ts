@@ -26,6 +26,13 @@ Dotted line
 
 <div className="line"></div>
 
+<span className="text-primary">Primary text</span>
+<span className="text-secondary">Secondary text</span>
+<span className="text-success">Success text</span>
+<span className="text-danger">Danger text</span>
+
+<div className="line"></div>
+
 <p>
 PARAGRAPH Praesent tempor posuere euismod. Aenean vehicula sem vitae malesuada aliquet. Aliquam eros lectus, pretium a metus sit amet, fringilla scelerisque risus. Integer suscipit arcu eu velit tempor pulvinar. Aliquam viverra libero sit amet dolor blandit convallis. Aliquam sit amet dui elit. Mauris sit amet luctus sem. </p>
 

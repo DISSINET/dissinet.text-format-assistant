@@ -15,13 +15,14 @@
     .input-wrapper,
     .output-wrapper {
       @apply w-1/2;
-      @apply m-2;
+      @apply m-5;
       @apply h-screen;
     }
     .input-wrapper {
       textarea {
         width: 100%;
         border: 1px solid black;
+        height: 100%;
       }
     }
   }
@@ -119,6 +120,18 @@
   span {
     &.text-italic {
       font-style: italic;
+    }
+    &.text-primary {
+      @apply text-muni;
+    }
+    &.text-secondary {
+      @apply text-secondary;
+    }
+    &.text-danger {
+      @apply text-danger;
+    }
+    &.text-success {
+      @apply text-success;
     }
     &.text-bold {
       font-weight: bold;
