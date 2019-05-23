@@ -8,12 +8,22 @@ export default class AppStore {
   }
 
   @computed
-  get text(): string {
+  get html(): string {
     return toJS(this._html);
   }
 
   @action
   changeText(newHtml): void {
-    this._html.set(newHtml);
+    if (this.validateHtml(newHtml)) {
+      this._html.set(newHtml);
+    }
+  }
+
+  validateHtml(html) {
+    var doc = document.createElement("div");
+    doc.innerHTML = html;
+    const valid = doc.innerHTML === html;
+    console.log("valid", valid);
+    return valid;
   }
 }
