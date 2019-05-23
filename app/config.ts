@@ -34,7 +34,7 @@ PARAGRAPH WITH INDENT Ut sed venenatis lacus. Vivamus convallis, velit ut tincid
 
 
 List without styling
-<ul className="list">
+<ul>
     <li>point 1</li>
     <li>point 1</li>
     <li>point 1</li>
@@ -43,7 +43,7 @@ List without styling
 <div className="line"></div>
 
 List with bullets
-<ul className="list bullets">
+<ul className="bullets">
     <li>point 1</li>
     <li>point 1</li>
     <li>point 1</li>
@@ -66,22 +66,16 @@ Button with icon
 
 <div className="line"></div>
 
-Heading
-<h1 className="heading">HEADING LABEL</h1>
+<h1 className="heading">Heading</h1>
+
+<h1 className="subheading">Subheading</h1>
 
 <div className="line"></div>
 
-SubHeading
-<h1 className="subheading">SUBHEADING LABEL</h1>
-
-<div className="line"></div>
-
-Link
-<a href="LINK" className="link">LINK CONTENT</a>
+<a href="dissinet" className="link" target="_blank">Link text</a>
 
 
 </div>
-
 `
 };
 

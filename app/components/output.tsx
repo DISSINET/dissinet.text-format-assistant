@@ -33,7 +33,7 @@ export default class OutputComponent extends React.Component<Props> {
     return (
       <div className="output-wrapper" data-testid="output-wrapper">
         <h1 className="heading text-muni">Output</h1>
-        <div ref={this.outputRef} />
+        <div className="output-html" ref={this.outputRef} />
       </div>
     );
   }
