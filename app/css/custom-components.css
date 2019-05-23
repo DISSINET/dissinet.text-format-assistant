@@ -21,9 +21,15 @@
     .input-wrapper {
       textarea {
         width: 100%;
-        border: 1px solid black;
         height: 100%;
       }
+    }
+
+    .input-wrapper textarea,
+    .output-wrapper .output-html {
+      border: 2px solid black;
+      padding: 1rem;
+      margin: 1rem 0;
     }
   }
 }
