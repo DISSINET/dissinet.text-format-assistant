@@ -6,6 +6,7 @@ import { observer } from "mobx-react";
 type Props = {
   store: any;
 };
+
 @observer
 export default class App extends React.Component<Props> {
   constructor(props) {

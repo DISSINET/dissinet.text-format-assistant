@@ -48,3 +48,41 @@ button.success {
     }
   }
 }
+
+/* DISSINET STYLES */
+.output-wrapper {
+  div.line {
+    margin-bottom: 2rem;
+    &.solid {
+      border-bottom: 2px solid black;
+    }
+    &.dotted {
+      border-bottom: 2px dotted black;
+    }
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  span {
+    &.text-italic {
+      font-style: italic;
+    }
+    &.text-bold {
+      font-weight: bold;
+    }
+    &.text-strikethrough {
+      text-decoration: line-through;
+    }
+    &.text-underline {
+      text-decoration: underline;
+    }
+  }
+
+  p.indent {
+    text-indent: 1rem;
+  }
+  ul.list {
+    li {
+    }
+  }
+}
