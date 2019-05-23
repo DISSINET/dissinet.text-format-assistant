@@ -15,9 +15,9 @@ export default class App extends React.Component<Props> {
   render() {
     const store = this.props.store;
     return (
-      <div>
-        <InputComponent />
-        <OutputComponent />
+      <div className="io-wrapper">
+        <InputComponent changeHtml={store.changeHtml.bind(store)} />
+        <OutputComponent html={store.html} />
       </div>
     );
   }

@@ -25,9 +25,26 @@ button.success {
   @apply bg-success;
 }
 
-.app-wrapper {
+.app {
   @apply absolute;
   @apply .pin-y;
   @apply pin-r;
   @apply pin-l;
+
+  .io-wrapper {
+    @apply mx-auto;
+    @apply flex;
+    .input-wrapper,
+    .output-wrapper {
+      @apply w-1/2;
+      @apply m-2;
+      @apply h-screen;
+    }
+    .input-wrapper {
+      textarea {
+        width: 100%;
+        border: 1px solid black;
+      }
+    }
+  }
 }

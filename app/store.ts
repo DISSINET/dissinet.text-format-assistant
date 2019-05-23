@@ -13,7 +13,7 @@ export default class AppStore {
   }
 
   @action
-  changeText(newHtml): void {
+  changeHtml(newHtml): void {
     if (this.validateHtml(newHtml)) {
       this._html.set(newHtml);
     }
