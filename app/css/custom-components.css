@@ -79,9 +79,14 @@ button.success {
   }
 
   p.indent {
-    text-indent: 1rem;
+    text-indent: 2rem;
   }
-  ul.list {
+  ul {
+    list-style: none;
+    padding: 0;
+    &.bullets {
+      list-style: inside;
+    }
     li {
     }
   }
