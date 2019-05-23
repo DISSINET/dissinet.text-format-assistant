@@ -14,6 +14,7 @@ export default class AppStore {
 
   @action
   changeHtml(newHtml): void {
+    newHtml = newHtml.split("className=").join("class=");
     if (this.validateHtml(newHtml)) {
       this._html.set(newHtml);
     }
