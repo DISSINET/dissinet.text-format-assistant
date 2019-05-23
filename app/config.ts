@@ -52,17 +52,19 @@ List with bullets
 <div className="line"></div>
 
 Icon
-<i class="fa fa-car"></i>
+<i class="icon icon-beer"></i>
 
 <div className="line"></div>
 
-Button
-<button className="button">BUTTON LABEL</button> 
+<button className="button primary">Primary Button</button> 
+<button className="button secondary">Primary Button</button> 
+<button className="button danger">Primary Button</button> 
+<button className="button success">Primary Button</button> 
 
 <div className="line"></div>
 
-Button with icon
-<button className="button"><i class="fa fa-car"></i>BUTTON LABEL</button> 
+<button className="button icon-after">Button with icon<i class="icon icon-beer"></i></button> 
+<button className="button icon-before"><i class="icon icon-beer"></i>Button with icon</button> 
 
 <div className="line"></div>
 
@@ -75,8 +77,7 @@ Button with icon
 <a href="dissinet" className="link" target="_blank">Link text</a>
 
 
-</div>
-`
+</div>`
 };
 
 export default config;

@@ -1,28 +1,6 @@
 :root {
   --panel-w: 20em;
-}
-
-button {
-  @apply text-white;
-  @apply font-bold;
-  @apply text-xs;
-  @apply py-2;
-  @apply px-3;
-  @apply rounded;
-  @apply m-2;
-}
-
-button.primary {
-  @apply bg-muni;
-}
-button.secondary {
-  @apply bg-secondary;
-}
-button.danger {
-  @apply bg-danger;
-}
-button.success {
-  @apply bg-success;
+  --color-muni: #0000dc;
 }
 
 .app {
@@ -108,6 +86,36 @@ button.success {
   .subheading {
     font-family: "Muni", Arial, Helvetica Neue, sans-serif;
   }
+
+  button {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    @apply bg-muni;
+    &.icon-before .icon {
+      padding-right: 0.5rem;
+    }
+    &.icon-after .icon {
+      padding-left: 0.5rem;
+    }
+    &.primary {
+      @apply bg-muni;
+    }
+    &.secondary {
+      @apply bg-secondary;
+    }
+    &.danger {
+      @apply bg-danger;
+    }
+    &.success {
+      @apply bg-success;
+    }
+  }
+  button:hover {
+    @apply bg-black;
+  }
+
   span {
     &.text-italic {
       font-style: italic;
