@@ -30,28 +30,4 @@ button.success {
   @apply .pin-y;
   @apply pin-r;
   @apply pin-l;
-  .panel {
-    width: var(--panel-w);
-    @apply absolute;
-    @apply bg-white;
-    @apply z-10;
-    @apply px-4;
-    @apply py-4;
-    @apply pin-y;
-    @apply pin-l;
-    .heading {
-      @apply mb-4;
-    }
-  }
-  .map {
-    @apply z-0;
-    @apply absolute;
-    @apply pin-y;
-    @apply pin-r;
-    width: calc(100% - var(--panel-w));
-    .leaflet-container {
-      @apply w-full;
-      @apply h-full;
-    }
-  }
 }

@@ -2,7 +2,7 @@ import * as React from "react";
 
 type Props = {};
 
-export default class PanelComponent extends React.Component<Props> {
+export default class InputComponent extends React.Component<Props> {
   props;
 
   constructor(props) {
