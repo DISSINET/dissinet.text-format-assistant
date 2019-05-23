@@ -1,5 +1,5 @@
 var config = {
-  defaultInputHTML: `<div>
+  defaultInputHTML: `
   New line
   <div className="newline"></div>
   
@@ -88,8 +88,7 @@ var config = {
   <button className="button icon-before"><i class="icon icon-beer"></i>Button with icon before</button> 
   
   <div className="line empty"></div>
-  
-  </div>`
+  `
 };
 
 export default config;
