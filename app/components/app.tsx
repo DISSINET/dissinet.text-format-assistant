@@ -1,6 +1,7 @@
 import * as React from "react";
 import InputComponent from "./input";
 import OutputComponent from "./output";
+import IconListComponent from "./iconlist";
 import { observer } from "mobx-react";
 
 type Props = {
@@ -16,9 +17,12 @@ export default class App extends React.Component<Props> {
   render() {
     const store = this.props.store;
     return (
-      <div className="io-wrapper">
-        <InputComponent changeHtml={store.changeHtml.bind(store)} />
-        <OutputComponent html={store.html} />
+      <div>
+        <div className="io-wrapper">
+          <InputComponent changeHtml={store.changeHtml.bind(store)} />
+          <OutputComponent html={store.html} />
+        </div>
+        <IconListComponent />
       </div>
     );
   }
