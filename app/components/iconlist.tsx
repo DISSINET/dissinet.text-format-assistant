@@ -17,20 +17,22 @@ export default class IconListComponent extends React.Component<Props> {
   render() {
     console.log("sat");
     return (
-      <div className="icon-list" data-testid="icon-list">
-        <h1 className="heading text-muni">Icons</h1>
-        {iconCss.split("}").map(iconStr => {
-          const iconClass = iconStr.substr(2, iconStr.indexOf(":") - 2);
+      <div className="icon-list-wrapper" data-testid="icon-list">
+        <h1 className="subheading text-muni">Icon List</h1>
+        <table>
+          {iconCss.split("}").map((iconStr, ii) => {
+            const iconClass = iconStr.substr(2, iconStr.indexOf(":") - 2);
 
-          return (
-            <p className="icon-one">
-              <span className="icon-classname">{iconClass}</span>
-              <span className="icon-picture">
-                <i key={iconClass} className={"icon " + iconClass} />
-              </span>
-            </p>
-          );
-        })}
+            return (
+              <tr className="icon-one" key={ii}>
+                <td className="icon-picture">
+                  <i className={"icon " + iconClass} />
+                </td>
+                <td className="icon-classname">{iconClass}</td>
+              </tr>
+            );
+          })}
+        </table>
       </div>
     );
   }

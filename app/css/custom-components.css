@@ -9,6 +9,19 @@
   @apply pin-r;
   @apply pin-l;
 
+  .icon-list-wrapper {
+    margin: 1.25rem;
+    margin-top: 5em;
+
+    table {
+      margin-left: 0.5rem;
+    }
+
+    p.icon-one {
+      .icon-picture {
+      }
+    }
+  }
   .io-wrapper {
     @apply mx-auto;
     @apply flex;
@@ -16,15 +29,13 @@
     .output-wrapper {
       @apply w-1/2;
       @apply m-5;
-      @apply h-screen;
-    }
-    .input-wrapper {
-      textarea {
+      textarea,
+      .output-html {
         width: 100%;
         height: 100%;
+        overflow-y: scroll;
       }
     }
-
     .input-wrapper textarea,
     .output-wrapper .output-html {
       border: 2px solid black;
