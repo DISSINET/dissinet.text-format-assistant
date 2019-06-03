@@ -4,9 +4,13 @@ type Props = {};
 
 export default class IconListComponent extends React.Component<Props> {
   props;
+  state: { display };
 
   constructor(props) {
     super(props);
+    this.state = {
+      display: false
+    };
   }
 
   handleChange(e) {
@@ -14,25 +18,43 @@ export default class IconListComponent extends React.Component<Props> {
     this.props.changeHtml(e.target.value);
   }
 
+  handleToggleList() {
+    this.setState({
+      display: !this.state.display
+    });
+  }
+
   render() {
-    console.log("sat");
     return (
       <div className="icon-list-wrapper" data-testid="icon-list">
-        <h1 className="subheading text-muni">Icon List</h1>
-        <table>
-          {iconCss.split("}").map((iconStr, ii) => {
-            const iconClass = iconStr.substr(2, iconStr.indexOf(":") - 2);
+        <h1
+          onClick={this.handleToggleList.bind(this)}
+          className="subheading text-muni cursor-pointer"
+        >
+          Icon List{" "}
+          <i
+            className={
+              "icon " +
+              (this.state.display ? "icon-angle-down" : "icon-angle-right")
+            }
+          />
+        </h1>
+        {this.state.display && (
+          <table>
+            {iconCss.split("}").map((iconStr, ii) => {
+              const iconClass = iconStr.substr(2, iconStr.indexOf(":") - 2);
 
-            return (
-              <tr className="icon-one" key={ii}>
-                <td className="icon-picture">
-                  <i className={"icon " + iconClass} />
-                </td>
-                <td className="icon-classname">{iconClass}</td>
-              </tr>
-            );
-          })}
-        </table>
+              return (
+                <tr className="icon-one" key={ii}>
+                  <td className="icon-picture">
+                    <i className={"icon " + iconClass} />
+                  </td>
+                  <td className="icon-classname">{iconClass}</td>
+                </tr>
+              );
+            })}
+          </table>
+        )}
       </div>
     );
   }
