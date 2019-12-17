@@ -1,6 +1,3 @@
-# Map boilerplate
- * npm
- * parcel
- * typescript
- * mobx
- * leaflet + leaflet react
+# Internal text formatter for DISSINET project
+
+Work in progress
