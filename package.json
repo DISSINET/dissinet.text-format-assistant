@@ -55,7 +55,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
-    "gts": "^3.1.0",
+    "gts": "^3.1.1",
     "jest": "^24.9.0",
     "jest-environment-puppeteer": "^4.3.0",
     "puppeteer": "^1.20.0",
